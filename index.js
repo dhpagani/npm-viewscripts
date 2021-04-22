@@ -1,7 +1,7 @@
 const dirTree = require('directory-tree');
 const fs = require('fs');
 
-const scriptTypes = ['preinstall', 'postinstall', 'preuninstall', 'postuninstall'];
+const scriptTypes = ['preinstall', 'postinstall', 'preuninstall', 'postuninstall','install'];
 const reports = [];
 
 const walkModules = ((path = 'node_modules') => {
