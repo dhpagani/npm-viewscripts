@@ -1,6 +1,8 @@
 const dirTree = require('directory-tree');
 const fs = require('fs');
 
+console.log('running dhpagani version');
+
 const scriptTypes = ['preinstall', 'postinstall', 'preuninstall', 'postuninstall','install'];
 const reports = [];
 
