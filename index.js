@@ -14,9 +14,9 @@ const walkModules = ((path = 'node_modules') => {
       let pkg = JSON.parse(fs.readFileSync(item.path, 'utf8'));
       if (!pkg.scripts) return;
       let scripts = Object.keys(pkg.scripts);
-      scripts.forEach((script) => {
-        console.log(item, script)
+      scripts.forEach((script,v) => {
         if (scriptTypes.includes(script)) {
+          console.log(script,v)
           reports.push({name: pkg.name, script: script})
         }
       });
