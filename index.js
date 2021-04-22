@@ -15,6 +15,7 @@ const walkModules = ((path = 'node_modules') => {
       if (!pkg.scripts) return;
       let scripts = Object.keys(pkg.scripts);
       scripts.forEach((script) => {
+        console.log(item, script)
         if (scriptTypes.includes(script)) {
           reports.push({name: pkg.name, script: script})
         }
